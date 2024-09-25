@@ -9,7 +9,7 @@ const DashboardPage = () => {
 
   const mutation = useMutation({
     mutationFn: (text) => {
-      return fetch(`http://localhost:3000/api/chats`, {
+      return fetch(`http://ask-nova-backend.vercel.app/api/chats`, {
         method: "POST",
         credentials: "include",
         headers: {

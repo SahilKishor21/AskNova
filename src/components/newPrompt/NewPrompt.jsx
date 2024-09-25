@@ -44,7 +44,7 @@ const NewPrompt = ({ data }) => {
 
   const mutation = useMutation({
     mutationFn: () => {
-      return fetch(`http://localhost:5173/api/chats/${data._id}`, {
+      return fetch(`http://ask-nova-backend.vercel.app/api/chats/${data._id}`, {
         method: "PUT",
         credentials: "include",
         headers: {

@@ -8,7 +8,7 @@ const ChatList = () => {
   const { isPending, error, data } = useQuery({
     queryKey: ["userChats"],
     queryFn: () =>
-      fetch(`http://localhost:3000/api/userchats`, {
+      fetch(`http://ask-nova-backend.vercel.app/api/userchats`, {
         credentials: "include",
       }).then((res) => res.json()),
   });
