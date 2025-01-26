@@ -44,7 +44,7 @@ const NewPrompt = ({ data }) => {
 
   const mutation = useMutation({
     mutationFn: () => {
-      return fetch(`http://localhost:3000/api/chats/${data._id}`, {
+      return fetch(`https://asknova-backend.onrender.com/api/chats/${data._id}`, {
         method: "PUT",
         credentials: "include",
         headers: {
@@ -124,7 +124,7 @@ const NewPrompt = ({ data }) => {
       {img.isLoading && <div className="">Loading...</div>}
       {img.dbData?.filePath && (
         <IKImage
-          urlEndpoint= "https://ik.imagekit.io/Sahil"
+          urlEndpoint="https://ik.imagekit.io/Sahil"
           path={img.dbData?.filePath}
           width="380"
           transformation={[{ width: 380 }]}

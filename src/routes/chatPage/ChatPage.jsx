@@ -12,7 +12,7 @@ const ChatPage = () => {
   const { isLoading, isError, data } = useQuery({
     queryKey: ["chat", chatId],
     queryFn: async () => {
-      const response = await fetch(`http://localhost:3000/api/chats/${chatId}`, {
+      const response = await fetch(`https://asknova-backend.onrender.com/api/chats/${chatId}`, {
         credentials: "include",
       });
       if (!response.ok) {

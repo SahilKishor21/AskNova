@@ -1,8 +1,8 @@
 import { IKContext, IKImage, IKUpload } from "imagekitio-react";
 import { useRef } from "react";
 
-const urlEndpoint = "https://ik.imagekit.io/Sahil";
-const publicKey = "public_xKP1KE+ssW/OS9CTeVtaA6N0Dyc=";
+const urlEndpoint = 'https://ik.imagekit.io/Sahil';
+const publicKey = 'public_IDBlCOsWxzb2igVOO4/qATXib1M=';
 
 const authenticator = async () => {
   try {
